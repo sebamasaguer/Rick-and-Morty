@@ -50,26 +50,30 @@ export default [
    },
    {
       id: 4,
-      name: 'Beth Smith',
-      status: 'Alive',
-      species: 'Human',
-      gender: 'Female',
+      name: "Johnny Depp",
+      status: "Alive",
+      species: "Human",
+      type: "",
+      gender: "Male",
       origin: {
-         name: 'Earth (Replacement Dimension)',
-         url: 'https://rickandmortyapi.com/api/location/20',
+        name: "Earth (C-500A)",
+        url: "https://rickandmortyapi.com/api/location/23"
       },
-      image: 'https://rickandmortyapi.com/api/character/avatar/4.jpeg',
-   },
+
+      image: "https://rickandmortyapi.com/api/character/avatar/183.jpeg",
+
+    },
    {
       id: 5,
-      name: 'Jerry Smith',
-      status: 'Alive',
-      species: 'Human',
+      name: 'Baby Wizard',
+      status: 'Dead',
+      species: 'Alien',
+      type:'Parasite',
       gender: 'Male',
       origin: {
          name: 'Earth (Replacement Dimension)',
          url: 'https://rickandmortyapi.com/api/location/20',
       },
-      image: 'https://rickandmortyapi.com/api/character/avatar/5.jpeg',
+      image: 'https://rickandmortyapi.com/api/character/avatar/31.jpeg',
    },
 ];

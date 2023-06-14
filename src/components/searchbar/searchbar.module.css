@@ -1,0 +1,26 @@
+.contDerecha{
+
+  display: flex;
+    flex: content;
+    align-content: end;
+    justify-content: end;
+    border-top-style: hidden;
+    border-color: rgba(236, 142, 26, 0.24);
+    padding-right: 3em;
+}
+.contIzquierda{
+    flex: content;
+    align-content: left;
+    justify-content: left;
+    border-top-style: hidden;
+    border-color: rgba(236, 142, 26, 0.24);
+    padding-left: 3em;
+}
+.contIzquierda .imagen{
+height: 100px;
+width: 500px;
+
+}
+.contDerecha .input{
+    background-color: rgba(255, 228, 196, 0.082);
+}
