@@ -1,22 +1,22 @@
 import React from "react";
-import { useState } from 'react';
+//import { useState } from 'react';
 import SearchBar from "../searchbar/SearchBar";
-import styles from "./nav.module.css";
+import styled from "./nav.module.css";
+import {NavLink} from 'react-router-dom';
+//import About from './about/About.jsx';
+
 const Nav = ({onSearch}) => {
-    const [id, setId] = useState('');
-
-    function aleatorio(a) {
-        return a=Math.round(Math.random()*(824-0)+parseInt(0));
-        }
-
-    return (
-      <div className={styles.container}>
-        <SearchBar onSearch={onSearch} />
-        <button className={styles.button}
-        onClick={() => onSearch(aleatorio(id))}> + 
-        </button>
+    //const [id, setId] = useState('');
+    return ( 
+       <div className={styled.container}>
+        
+        <div className={styled.navlink}>
+<NavLink to={'/Home'} className={styled.link}>Home</NavLink> 
+<NavLink to={'/about'} className={styled.link}>About</NavLink>
+</div>
+<SearchBar className={styled.search} onSearch={onSearch} />
       </div>
-    )
+       )
   }
   
   export default Nav

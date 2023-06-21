@@ -1,41 +1,24 @@
 import { useState } from 'react';
-import styles from './searchbar.module.css';
+import styled from './searchbar.module.css';
 
 export default function SearchBar({onSearch}) {
    const [id, setId] = useState('');
 
    const handleOnChange = (e) => {
-      setId(e.target.value);
+      e.preventDefault();
+      onSearch(id)
+      setId('');
    }
-   
+   function aleatorio(a) {
+      return a=Math.round(Math.random()*(824-0)+1);
+      }
    return (
-      <div
-         style={{
-            display: 'flex',
-            margin:20,
-            width: '80%',
-            justifyContent: 'end',
-            marginRight: 100,
-         }}
-         >
-         <input 
-            type='search' 
-            placeholder='Buscar...'
-            style={{
-               border: '0px',
-               borderRadius: '5px',
-               backgroundColor: 'rgba(255, 228, 196, 0.082)'
-            }}
-            onChange={handleOnChange}
-            id="myInput"
-         />
-         <button 
-            style={{height: 40, borderRadius: 5, marginLeft: 10,backgroundColor:'rgba(255, 228, 196, 0.082)' }}
-            onClick={() => onSearch(id)}
-            autoFocus
-         >
-            Agregar
-         </button>
+      <div className= {styled.cont}>
+      <form action="post" method="post" onSubmit={handleOnChange}>
+         <input type='search' placeholder='Buscar...' onChange={e=>setId(e.target.value)} value={id}/>
+         <button className={styled.boton}>Agregar</button>
+      </form>
+         <button className={styled.boton}   onClick={() => onSearch(aleatorio(id))}> Random </button>
       </div>
    );
 }

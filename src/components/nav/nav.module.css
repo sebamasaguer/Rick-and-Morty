@@ -1,16 +1,35 @@
 .container{
-    display: flex;
-    flex-wrap: wrap;
- 
+    height: 8em;
+    width: 100%;
+    align-items:center;
+   
     background-color: rgba(127, 255, 212, 0.116);
 background-image: url('../../../public/fondo/logo.png');
 background-repeat:no-repeat;
 background-position: left;
-background-size: 20%;
+background-size: 30%;
+
 }
-.container .button{
-    height: 40px;
+.container .search{
+    align-items:center;
+    background-color: #470063;
+}   
+.container .navlink {
+    justify-content: center;
+  bottom: -30%;
+    position: relative;
+}
+.navlink .link{
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(19, 16, 16);
+    background-color: rgba(174, 9, 196, 0.432);
     border-radius: 5px;
-    margin-left: 10px;
-    background-color: rgba(255, 228, 196, 0.082);
+    padding: 10px;
+    margin: 10px;
+  
+ 
+
 }
