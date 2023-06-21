@@ -2,8 +2,9 @@
     display: flexbox;
     align-items: center;
    justify-content: center;
-    height: 500px;
-    width: 600px;      background-color: rgba(190, 161, 149, 0.521);
+    height: 600px;
+    width: 600px;
+    background-color: rgba(190, 161, 149, 0.521);
       flex-direction: column;
       margin: 0 auto;
       padding: 1em;
@@ -13,17 +14,16 @@
       color: rgba(53, 10, 207, 0.863);
     }
     .image{
-    height: 300px;
-    width: 500px;
+    height: 250px;
+    width: 320px;
         background-image: url('../../../public/fondo/2e00fd3b8917dc07f89d53daf666bc10.gif');
         background-repeat: no-repeat;
         background-size: 100%;
-      
         border-radius: 100%;
     }
     .image:hover{
-height: 300px;
-width:500px;
+height: 250px;
+width:320px;
         background-image: url('../../../public/fondo/b70.gif');
         background-repeat: no-repeat;
         background-size: 100%;
@@ -31,12 +31,12 @@ width:500px;
     }
     
 .form{
-    margin-left: 20%;
+    
     align-items: center;
     text-align: right;
     justify-items: center;
-    height: 100px;
-    width:350px;
+    height: 30%;
+    width:100%;
     border:1px solid #000;
   }
   

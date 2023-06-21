@@ -15,7 +15,7 @@ function App() {
 const location = useLocation(); 
 const [access, setAccess] = useState(false);
 const EMAIL='randm@gmail.com';
-const PASSWORD= 'rickandmorty23';
+const PASSWORD= 'morty23';
 const navigate= useNavigate();
 
 useEffect(() => {

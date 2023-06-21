@@ -11,10 +11,6 @@ const [userData,setUserData] = React.useState({
     password: ''
 })
 
-  const [inputs, setInputs] = React.useState({
-    email: '',
-    password: ''
-  })
 
   const [errors, setErrors] = React.useState({
     email: '', 

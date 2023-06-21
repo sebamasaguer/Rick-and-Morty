@@ -1,12 +1,32 @@
-const regexEmail = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/i;
-const regexPassword =/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;
+export const validation = (values) => {
+    let errors = {};
 
-export function validation(userData){
-let errors= {};
+    const regexEmail = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
 
-if(!regexEmail.test(userData.email))errors.email='El usaurio debe ser un email';
-else if(!userData.email)errors.email='El usuario no puede esta vacio';
-else if (userData.email.length>35)errors.email='El uusario no puede tener mas de 35 caracteres';
-if(!regexPassword.test(userData.password)) errors.password='La contraseña debe tener al menos un numero';
-return errors;
+    const regexPrimerNumero = /^[0-9]/;
+
+    if (!values.email) {
+        errors.email = "El email es requerido";
+    } 
+    else if (!regexEmail.test(values.email)) {
+        errors.email = "El email es inválido";
+    }
+
+    if (values.password.length > 35) {
+        errors.password = "Password muy larga";
+    }
+
+    else if (!values.password) {
+        errors.password = "La contraseña es requerida";
+    } 
+
+    else if (regexPrimerNumero.test(values.password)) {
+        errors.password = "La contraseña no puede comenzar con un número";
+    }
+
+    if (values.password.length < 6 || values.password.length > 10) {
+        errors.password = "La contraseña debe tener al menos entre 6 y 10 caracteres";
+    }
+
+    return errors;
 }
