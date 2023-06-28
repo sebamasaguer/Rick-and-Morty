@@ -13,6 +13,7 @@ const Nav = ({onSearch}) => {
         <div className={styled.navlink}>
 <NavLink to={'/Home'} className={styled.link}>Home</NavLink> 
 <NavLink to={'/about'} className={styled.link}>About</NavLink>
+<NavLink to={'/favorites'} className={styled.link}>Favorites</NavLink>
 </div>
 <SearchBar className={styled.search} onSearch={onSearch} />
       </div>

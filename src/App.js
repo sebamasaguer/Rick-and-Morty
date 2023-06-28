@@ -6,6 +6,7 @@ import Nav from './components/nav/Nav.jsx';
 import {Routes,Route, useLocation, useNavigate} from 'react-router-dom';
 import About from './components/about/about';
 import Detail from './components/detail/Detaild';
+import Favorites from './components/favorites/Favorites';
 import Form from './components/Formulario/form';
 import { useEffect } from 'react';
 
@@ -14,7 +15,7 @@ function App() {
   const [Characters, setCharacters] = useState([]);
 const location = useLocation(); 
 const [access, setAccess] = useState(false);
-const EMAIL='randm@gmail.com';
+const EMAIL='r@m.com';
 const PASSWORD= 'morty23';
 const navigate= useNavigate();
 
@@ -62,6 +63,7 @@ const onClose = (id) => {
           element={<Cards characters={Characters} onClose={onClose} />}
         />
         <Route path='/about' element={<About/>}/>
+        <Route path='/favorites' element={<Favorites/>} />
         <Route path='/detail/:id' element={<Detail/>} />
         <Route path='*' element={<h1>404</h1>} />
       </Routes>
