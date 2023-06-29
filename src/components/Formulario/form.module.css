@@ -1,9 +1,9 @@
 .formulario {
     display: flexbox;
-    align-items: center;
+
    justify-content: center;
     height: 600px;
-    width: 600px;
+    width: 620px;
     background-color: rgba(190, 161, 149, 0.521);
       flex-direction: column;
       margin: 0 auto;
@@ -15,7 +15,7 @@
     }
     .image{
     height: 250px;
-    width: 320px;
+    width: 340px;
         background-image: url('../../../public/fondo/2e00fd3b8917dc07f89d53daf666bc10.gif');
         background-repeat: no-repeat;
         background-size: 100%;
@@ -23,7 +23,7 @@
     }
     .image:hover{
 height: 250px;
-width:320px;
+width:340px;
         background-image: url('../../../public/fondo/b70.gif');
         background-repeat: no-repeat;
         background-size: 100%;
@@ -32,12 +32,12 @@ width:320px;
     
 .form{
     
-    align-items: center;
     text-align: right;
-    justify-items: center;
+  
     height: 30%;
     width:100%;
-    border:1px solid #000;
+    border:1px solid #0303032f;
+
   }
   
   .warning {
