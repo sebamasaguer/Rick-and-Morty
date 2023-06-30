@@ -41,30 +41,30 @@ const [userData,setUserData] = React.useState({
     <div className={styled.form}>
     <form onSubmit={handleSubmit}>
       <hr />
-      <label htmlFor="email">Correo Electrónico: </label>
+      <label htmlFor="email">@</label>
       <input 
       type="text" 
       name="email" 
       placeholder='Escribe tu email...' 
       value={userData.email} 
       onChange={handleInputChange} 
-      className={errors.email && styled.warning}>
+      className={styled.input}>
       </input>
       {errors.email && <p className={styled.danger} >{errors.email}</p>}
      <br />
       
-      <label htmlFor="password">Contraseña: </label>
+      <label htmlFor="password">Cc:</label>
       <input 
       name="password" 
       placeholder='Escribe tu contraseña' 
       type='password' 
       value={userData.password} 
       onChange={handleInputChange} 
-      className={errors.password && styled.warning} >
+      className={styled.input} >
     </input>
       {errors.password && <p className={styled.danger}>{errors.password}</p>}
 <br />
-      <button type='submit' >Enviar</button>
+      <button className={styled.boton} type='submit' >Enviar</button>
     </form>
     </div>
     

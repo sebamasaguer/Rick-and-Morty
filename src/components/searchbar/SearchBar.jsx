@@ -15,8 +15,8 @@ export default function SearchBar({onSearch}) {
    return (
       <div className= {styled.cont}>
       <form action="post" method="post" onSubmit={handleOnChange}>
-         <input type='search' placeholder='Buscar...' onChange={e=>setId(e.target.value)} value={id}/>
-         <button className={styled.boton}>Agregar</button>
+         <input type='search' placeholder='Ingrese un número 0 a 824' onChange={e=>setId(e.target.value)} value={id}/>
+         <button className={styled.boton}>Ver</button>
       </form>
          <button className={styled.boton}   onClick={() => onSearch(aleatorio(id))}> Random </button>
       </div>

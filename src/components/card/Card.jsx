@@ -57,20 +57,19 @@ function Card(props) {
  }, [myFavorites]);
    return (
       <div className={styled.conteiner}>
-         {isFav ? (
-        <button onClick={handleFavorite}>❤️</button>
-      ) : (
-        <button onClick={handleFavorite}>🤍</button>
-      )}
-        
-         <button 
-            onClick={() => props.onClose(props.id)}
-            className={styled.button}
-         >X</button>
         <div className={styled.cont}>
          <img 
             src={props.image} 
             alt='No se puedo cargar la imagen' />
+            <button 
+            onClick={() => props.onClose(props.id)}
+            className={styled.button}
+         >X</button>
+            {isFav ? (
+        <button className={styled.like} onClick={handleFavorite}>❤️</button>
+      ) : (
+        <button className={styled.unlike}onClick={handleFavorite}>🤍</button>
+      )}
        <div className={styled.id}>{props.id}</div>
        <Link className={styled.Link} to={`/detail/${props.id}`}><h2 >{props.name}</h2></Link>
       

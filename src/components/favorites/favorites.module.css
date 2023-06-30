@@ -1,9 +1,8 @@
 .container {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: raw;
    
-     justify-content: center;
      background-image: url('../../../public/fondo/pngegg.png' );
      background-repeat: no-repeat;
    background-position: center;
@@ -13,4 +12,21 @@
      }
   .select{
     height: 20px;
+    width: 40%;
+
+}
+  
+  .filtros{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: raw;
+    justify-content: center;
+    align-items: center;
+    width: 15em;
+    height: 20em;
+   
+    top: 0;
+    left: 0;
+    background-color: rgba(212, 43, 170, 0.445);
+    z-index: 1;
   }

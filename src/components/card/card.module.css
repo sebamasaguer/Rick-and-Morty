@@ -12,11 +12,29 @@
     padding: 0.2em;*/
 
 }
- .button{
- background-color: rgba(0, 255, 255, 0.26);
-  color:rgb(10, 10, 10);
+.like{
   position: relative;
-    left: 100px;
+  right:40%;  
+  top:-25px;
+  background-color: rgba(0, 255, 255, 0.26);
+  color:rgb(10, 10, 10);
+  border-radius: 5px;
+}
+.unlike{
+  position: relative;
+  right:40%;  
+  top:-25px;
+background-color: rgba(163, 100, 16, 0.616);
+border-radius: 5px;
+}
+ .button{
+border: none;
+background-color: rgba(0, 255, 255, 0);
+  color:rgb(243, 5, 5);
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+    left: 15px;
     top: 5px;
 
 }
@@ -37,7 +55,6 @@ transition: 1s;
   background-color: rgba(0, 255, 255, 0.322);
   max-width: 100%;
   max-height: 100%;
-
   width: 80%;
   position: relative;
   overflow: hidden; 
@@ -50,10 +67,11 @@ transition: 1s;
   left: 3px;  
   top:-5px;
 position: absolute;
+border-radius: 5px;
 }
 .cont .id{
   right:5px;  
-  bottom:60px;
+  bottom:80px;
 position: absolute;
 background-color: rgba(163, 100, 16, 0.616);
 border-radius: 5px;

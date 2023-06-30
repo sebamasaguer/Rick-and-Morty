@@ -32,14 +32,32 @@ width:340px;
     
 .form{
     
-    text-align: right;
-  
+    text-align: center;
+    
     height: 30%;
     width:100%;
     border:1px solid #0303032f;
 
   }
-  
+  .boton {
+    background-color: rgba(53, 10, 207, 0.863);
+    color: white;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    border: none;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .input {
+    background-color: rgba(0, 0, 255, 0.212);
+    border: none;
+    border-bottom: solid 2px rgba(10, 102, 207, 0.199);
+    margin-bottom: 1em;
+    padding: 0.5em;
+    width: 10em;
+    border-radius: 0.3em;
+  }
   .warning {
     border: solid red 1px;
     border-radius: 0.2em;

@@ -25,9 +25,9 @@ const rootReducer = (state = initialState, action) => {
       case FILTER:
         return {
           ...state,
-          myFavorites:state.allCharaters.filter((char)=>{
-            return char.gender===action.payloads
-          })}
+          myFavorites: state.allCharaters.filter((char)=>
+           char.gender===action.payload
+      )}
       case ORDER:
         return {
           ...state,
